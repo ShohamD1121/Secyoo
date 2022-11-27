@@ -18,7 +18,7 @@ const router = createBrowserRouter([
     element: <MainLayout />,
     children: [
       {
-        path: "/Secyoo/main",
+        path: "",
         element: <Main />,
       },
     ],
