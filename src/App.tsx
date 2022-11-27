@@ -1,11 +1,32 @@
 import React from "react";
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Navbar from "./components/Navbar/Navbar";
+import Main from "./pages/Main";
+
+const MainLayout: React.FC = () => {
+  return (
+    <>
+      <Navbar />
+      <Outlet />
+    </>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/Secyoo",
+    element: <MainLayout />,
+    children: [
+      {
+        path: "/Secyoo/main",
+        element: <Main />,
+      },
+    ],
+  },
+]);
 
 const App: React.FC = () => {
-  return (
-    <div className="min-h-[100vh] flex justify-center items-center">
-      <h1>Secyoo</h1>
-    </div>
-  );
+  return <RouterProvider router={router} />;
 };
 
 export default App;

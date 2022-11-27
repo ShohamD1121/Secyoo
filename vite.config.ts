@@ -8,6 +8,11 @@ export default defineConfig({
 });
 
 // How to update
+
+// git add .
+// git commit -m "update"
+// git push -u -f origin main
+
 // npm run build
 // git add dist -f
 // git commit -m "updated dist"
