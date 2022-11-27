@@ -112,10 +112,34 @@ body {
 
 .image {
   overflow: hidden;
-  transition-duration: 0.8s;
-  transition-property: transform;
+  position: relative;
+  animation-name: float;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
 }
-.image:hover {
+/* .image:hover {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
+} */
+
+/* div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+} */
+
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-25px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import useWindowDimensions from "../../hooks/useWindowDimensions";
 import logo from "../../images/logo.png";
+import { routes } from "../../routes/routes";
 
 const Navbar: React.FC = () => {
   const { width } = useWindowDimensions();
@@ -12,24 +13,24 @@ const Navbar: React.FC = () => {
         className="flex justify-between w-11/12
        px-4 lg:max-w-7xl md:items-center md:flex md:px-8"
       >
-        <div>
+        <Link to={routes.MAIN}>
           <img src={logo} alt="skilty-logo" className="w-1/3" />
-        </div>
+        </Link>
 
         <div className="flex gap-5">
           <ul className="flex items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-cyan-600">
             <li className="hover:text-cyan-900">
-              <Link to="/secyoo">Home</Link>
+              <Link to={routes.MAIN}>Home</Link>
             </li>
             <li className="hover:text-cyan-900">
-              <Link to="/secyoo">About</Link>
+              <Link to={routes.MAIN}>About</Link>
             </li>
             <li className="hover:text-cyan-900">
-              <Link to="/secyoo">Contact us</Link>
+              <Link to={routes.MAIN}>Contact us</Link>
             </li>
           </ul>
           <Link
-            to="/secyoo"
+            to={routes.MAIN}
             className="px-4 py-2 text-white bg-blue-500 rounded-md shadow hover:bg-blue-50 hover:text-blue-600"
           >
             Join us
@@ -53,7 +54,7 @@ const Navbar: React.FC = () => {
           <li>
             <Link
               className="mb-[1em] block no-underline text-blue-400 text-center"
-              to=""
+              to={routes.MAIN}
             >
               Home
             </Link>
@@ -61,7 +62,7 @@ const Navbar: React.FC = () => {
           <li>
             <Link
               className="mb-[1em] block no-underline text-blue-400 text-center"
-              to=""
+              to={routes.MAIN}
             >
               About
             </Link>
@@ -69,7 +70,7 @@ const Navbar: React.FC = () => {
           <li>
             <Link
               className="mb-[1em] block no-underline text-blue-400 text-center"
-              to=""
+              to={routes.MAIN}
             >
               Contact us
             </Link>
@@ -77,7 +78,7 @@ const Navbar: React.FC = () => {
           <li>
             <div className="space-x-2 md:inline-block">
               <Link
-                to="/secyoo"
+                to={routes.MAIN}
                 className="block text-blue-400 px-4 py-2 bg-cyan-100 rounded-xl text-center"
               >
                 Join us
