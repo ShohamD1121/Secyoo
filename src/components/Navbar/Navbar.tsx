@@ -41,23 +41,23 @@ const Navbar: React.FC = () => {
     </nav>
   ) : (
     <div className="flex justify-between items-center w-full bg-cyan-100 h-[72px]">
-      <img src={logo} alt="logo" className="w-1/3" />
+      <img src={logo} alt="logo" className="w-[130px]" />
       <div
         onClick={() => setIsOpen((prev) => !prev)}
         className="flex flex-col justify-center items-center w-1/6 h-4/5 mr-2"
       >
         <span
-          className={`bg-blue-500  h-[2px] block w-full ease-in-out duration-300 ${
+          className={`bg-blue-500  h-[2px] block w-[60px] ease-in-out duration-300 ${
             !isOpen ? "translate-y-[-0.75rem]" : "rotate-[-45deg]"
           }`}
         ></span>
         <span
-          className={`bg-blue-500  h-[2px] block w-full ease-in-out duration-[400ms]   ${
+          className={`bg-blue-500  h-[2px] block  w-[60px] ease-in-out duration-[400ms]   ${
             !isOpen ? "" : "opacity-0"
           }`}
         ></span>
         <span
-          className={`bg-blue-500  h-[2px] block w-full ease-in-out duration-300 ${
+          className={`bg-blue-500  h-[2px] block  w-[60px] ease-in-out duration-300 ${
             !isOpen ? "translate-y-3" : "translate-y-[-4px] rotate-[45deg]"
           }`}
         ></span>
