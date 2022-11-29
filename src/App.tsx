@@ -2,6 +2,7 @@ import React from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import Main from "./pages/Main";
+import Sweeper from "./pages/Sweeper";
 
 const MainLayout: React.FC = () => {
   return (
@@ -19,8 +20,17 @@ const router = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Main />,
+        element: (
+          <div>
+            <Main />
+            <Sweeper />
+          </div>
+        ),
       },
+      // {
+      //   path: "",
+      //   element: <Sweeper />,
+      // },
     ],
   },
 ]);
