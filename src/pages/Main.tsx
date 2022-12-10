@@ -1,6 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import logo from "../images/onlyLogo.png";
+import newLogo from "../images/newLogo.png";
+import newLogov2 from "../images/newLogoV2.png";
 
 const container = {
   hidden: { opacity: 1, scale: 0 },
@@ -30,24 +32,27 @@ const Main: React.FC = () => {
           variants={container}
           initial="hidden"
           animate="visible"
-          className="flex flex-col justify-around w-full md:w-4/6 text-black gap-10 md:gap-0"
+          className="flex flex-col justify-evenly w-full md:w-4/6 text-[#ef426f] gap-10 md:gap-0"
         >
-          <motion.h1 variants={item} className="font-bold text-4xl ">
-            <span className="text-blue-600">This is a</span> Title
-            <span className="text-blue-600"> Title Title</span>
+          <motion.h1 variants={item} className="font-bold text-7xl ">
+            <span className="text-[#0a4d90]">SECURITY FOR </span>
+            <br />
+            YOUR SUCCESS
           </motion.h1>
           <motion.p
             variants={item}
-            className="text-blue-900 text-lg w-full md:w-3/4"
+            className="text-blue-900 text-[16px] w-full md:w-3/4"
           >
-            This is description
+            Secyoo is a business that provides penetration testing and cyber
+            security services to help companies protect themselves from cyber
+            threats.
           </motion.p>
-          <motion.button
+          {/* <motion.button
             variants={item}
             className="bg-white text-blue-500 w-1/2 md:w-1/4 mx-auto px-4 py-2 rounded-xl hover:bg-blue-500 hover:text-white"
           >
             button text
-          </motion.button>
+          </motion.button> */}
         </motion.div>
         <motion.div
           initial={{ scale: 0 }}
@@ -57,9 +62,9 @@ const Main: React.FC = () => {
             stiffness: 260,
             damping: 20,
           }}
-          className="flex justify-center items-center w-full md:w-2/6"
+          className="flex justify-center items-center mx-auto self-center w-3/6 md:w-1/6"
         >
-          <img src={logo} alt="logo-img" className="image md:w-7/12 w-3/4" />
+          <img src={newLogov2} alt="logo-img" className="image" />
         </motion.div>
       </div>
     </div>
