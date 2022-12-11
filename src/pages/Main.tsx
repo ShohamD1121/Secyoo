@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import logo from "../images/onlyLogo.png";
-import newLogo from "../images/newLogo.png";
 import newLogov2 from "../images/newLogoV2.png";
 
 const container = {

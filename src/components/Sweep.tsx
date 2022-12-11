@@ -10,7 +10,7 @@ interface Props {
 const Sweep: React.FC<Props> = ({ title, desc, img, bgColor }) => {
   return (
     <div
-      className={`flex md:flex-row flex-col w-[90%] h-[90%] justify-center items-center bg-${bgColor} px-0 md:px-10 rounded-lg`}
+      className={`flex md:flex-row flex-col w-[90%] h-[90%] justify-center items-center ${bgColor} px-0 md:px-10 rounded-xl`}
     >
       <div className="h-4/5 w-full md:w-1/2 flex flex-col justify-evenly items-center">
         <h1 className="text-left 2xl:text-6xl md:text-4xl font-bold w-10/12">
