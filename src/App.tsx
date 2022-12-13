@@ -15,7 +15,7 @@ const MainLayout: React.FC = () => {
 
 const router = createBrowserRouter([
   {
-    path: "/Secyoo",
+    path: "",
     element: <MainLayout />,
     children: [
       {

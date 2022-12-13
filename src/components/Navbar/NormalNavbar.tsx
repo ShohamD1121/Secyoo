@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { routes } from "../../routes/routes";
 import logo from "../../images/logo.png";
+import navbarLogo2 from "../../images/navbarLogo2.png";
 
 const NormalNavbar: React.FC = () => {
   return (
@@ -10,9 +11,11 @@ const NormalNavbar: React.FC = () => {
         className="flex justify-between w-11/12
    px-4 lg:max-w-7xl md:items-center md:flex md:px-8"
       >
-        <Link to={routes.MAIN}>
-          <img src={logo} alt="skilty-logo" className="w-1/3" />
-        </Link>
+        <div className="w-1/5">
+          <Link to={routes.MAIN}>
+            <img src={navbarLogo2} alt="secyoo-logo" />
+          </Link>
+        </div>
 
         <div className="flex gap-5">
           <ul className="flex items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 text-cyan-600">

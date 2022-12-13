@@ -1,6 +1,7 @@
 import React, { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../images/logo.png";
+import navbarLogo2 from "../../images/navbarLogo2.png";
 import { routes } from "../../routes/routes";
 
 const MoblieNavbar: React.FC = () => {
@@ -9,7 +10,11 @@ const MoblieNavbar: React.FC = () => {
   return (
     <Fragment>
       <div className="flex justify-between items-center w-full bg-cyan-100 h-[72px]">
-        <img src={logo} alt="logo" className="w-[130px]" />
+        <div className="w-1/2">
+          <Link to={routes.MAIN}>
+            <img src={navbarLogo2} alt="logo" className="ml-7 w-[130px]" />
+          </Link>
+        </div>
         <div
           onClick={() => setIsOpen((prev) => !prev)}
           className="flex flex-col justify-center items-center w-[60px] h-4/5 mr-2"
