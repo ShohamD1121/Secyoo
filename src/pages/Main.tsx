@@ -25,7 +25,7 @@ const item = {
 const Main: React.FC = () => {
   return (
     <div className="md:h-[calc(100vh-72px)] flex flex-col justify-center items-center w-full min-h-[calc(100vh-72px)] bg-gradient-to-b from-cyan-100 to-cyan-200 py-10 md:py-0">
-      <div className="w-5/6 h-3/4 flex flex-col gap-20 md:gap-0 md:flex-row justify-between">
+      <div className="w-5/6 h-3/4 flex flex-col gap-32 mb-10 md:mb-0 md:gap-0 md:flex-row justify-between">
         <motion.div
           variants={container}
           initial="hidden"
