@@ -19,7 +19,7 @@ const Sweep: React.FC<Props> = ({ title, desc, img, bgColor }) => {
           </h1>
         </div>
         <div className="flex justify-center h-2/3 py-5">
-          <div className="text-left 2xl:text-xl md:text-[17px] mt-2 md:mt-0 text-sm  text-gray-500  break-words px-3">
+          <div className="text-left 2xl:text-xl md:text-[17px] mt-2 md:mt-0 text-sm  text-gray-500  break-words px-5">
             {desc}
           </div>
         </div>
